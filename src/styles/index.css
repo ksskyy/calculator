@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+.wrapper {
+  margin: 2rem;
+  width: max-content;
+  border: 1px solid #000;
+  background-color: #c5c5c5;
+}
+.calculator-btn {
+  width: 6rem;
+  height: 3rem;
+  margin: 5px;
+  font-size: 16px;
+}
+
+.clear-btn {
+  background-color: #fa5347;
+  color: white;
+  grid-column-start: 1;
+}
+
+.memory-btn {
+  background-color: #00af5b;
+  color: white;
+}
+
+.number-btn,
+.decimal-btn,
+.sign-btn {
+  background-color: #686868;
+  color: white;
+}
+
+.operator-btn {
+  background-color: #ff8750;
+  color: white;
+}
+
+.enter-btn {
+  background-color: #42c0ff;
+  color: white;
+}
+.calculator {
+  display: grid;
+  width: 40rem;
+  grid-template-columns: auto auto auto;
+  margin: 1rem 2rem;
+}
+.result {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  padding: 1rem;
+  border: 2px solid #000;
+  border-radius: 2px;
+}
+.ac {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  align-self: self-end;
+}
+.c {
+  grid-column-start: 1;
+  grid-row-start: 4;
+  grid-row-end: 7;
+}
+.ms {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+.mc {
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+.mr {
+  grid-column-start: 4;
+  grid-row-start: 2;
+}
+.m-minus {
+  grid-column-start: 5;
+  grid-row-start: 2;
+}
+.m-plus {
+  grid-column-start: 6;
+  grid-row-start: 2;
+}
+.seven {
+  grid-column-start: 2;
+  grid-row-start: 3;
+}
+.eight {
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+.nine {
+  grid-column-start: 4;
+  grid-row-start: 3;
+}
+.four {
+  grid-column-start: 2;
+  grid-row-start: 4;
+}
+.five {
+  grid-column-start: 3;
+  grid-row-start: 4;
+}
+.six {
+  grid-column-start: 4;
+  grid-row-start: 4;
+}
+.one {
+  grid-column-start: 2;
+  grid-row-start: 5;
+}
+.two {
+  grid-column-start: 3;
+  grid-row-start: 5;
+}
+.three {
+  grid-column-start: 4;
+  grid-row-start: 5;
+}
+.zero {
+  grid-column-start: 2;
+  grid-row-start: 6;
+}
+.decimal {
+  grid-column-start: 3;
+  grid-row-start: 6;
+}
+.sign {
+  grid-column-start: 4;
+  grid-row-start: 6;
+}
+.equal {
+  grid-column-end: 7;
+}
